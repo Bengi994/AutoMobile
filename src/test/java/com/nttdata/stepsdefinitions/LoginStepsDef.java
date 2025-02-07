@@ -28,6 +28,6 @@ public void estoy_en_la_aplicación_de_sauce_labs() {
     @Then("valido el carrito de compra actualice correctamente")
     public void valido_el_carrito_de_compra_actualice_correctamente() throws InterruptedException {
         loginSteps.validateUpdateCart();
-        Thread.sleep(30000);
+        Thread.sleep(10000);
     }
 }
