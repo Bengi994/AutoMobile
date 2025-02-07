@@ -44,15 +44,4 @@ public class LoginSteps {
             System.out.println("Las cantidades no coinciden. Producto: " + productText + " Carrito: " + cartText);
         }
     }
-
-    public void login(String username,String password){
-
-        mainScreen.enterUser(username);
-        mainScreen.enterPassword(password);
-        mainScreen.clickLogin();
-    }
-
-    public void loginSuccess(){
-        Assert.assertTrue(productScreen.isProductDisplayed());
-    }
 }

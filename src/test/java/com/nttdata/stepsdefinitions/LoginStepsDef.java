@@ -10,19 +10,7 @@ import net.serenitybdd.annotations.Steps;
 public class LoginStepsDef {
     @Steps
     LoginSteps loginSteps;
-//
-//    @Given("que estoy en la aplicacion de Swag Labs")
-//    public void que_estoy_en_la_aplicacion_de_swag_labs() {
-//        loginSteps.validateLoginDisplayed();
-//    }
-//    @When("ingreso mis credenciales username {string} y password {string}")
-//    public void ingreso_mis_credenciales_username_y_password(String username, String password) {
-//        loginSteps.login(username,password);
-//    }
-//    @Then("el inicio de sesion es exitoso")
-//    public void el_inicio_de_sesion_es_exitoso() {
-//        loginSteps.loginSuccess();
-//    }
+
 @Given("estoy en la aplicación de SauceLabs")
 public void estoy_en_la_aplicación_de_sauce_labs() {
     loginSteps.validateLoginDisplayed();

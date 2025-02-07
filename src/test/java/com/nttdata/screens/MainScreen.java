@@ -11,12 +11,6 @@ public class MainScreen extends PageObject {
     private WebElement title;
     @AndroidFindBy(xpath = "//android.widget.ImageView[@content-desc=\"Sauce Labs Backpack\"]")
     private WebElement product;
-    @AndroidFindBy(accessibility = "test-Username")
-    private WebElement txtUsername;
-    @AndroidFindBy(accessibility = "test-Password")
-    private WebElement txtPassword;
-    @AndroidFindBy(accessibility = "test-LOGIN")
-    private WebElement btnLogin;
 
     public boolean titleVisible(){
         return title.isDisplayed();
@@ -26,15 +20,4 @@ public class MainScreen extends PageObject {
         return product.isDisplayed();
     }
 
-    public void enterUser(String user){
-        txtUsername.sendKeys(user);
-    }
-
-    public void enterPassword(String password){
-        txtPassword.sendKeys(password);
-    }
-
-    public void clickLogin(){
-        btnLogin.click();
-    }
 }
